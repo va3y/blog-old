@@ -6,7 +6,7 @@ const { data: articles } = await useAsyncData("home", () => {
 
 <template>
 	<div>
-		<div class="block text-red-400" v-for="article in articles">
+		<div class="block" v-for="article in articles">
 			<NuxtLink :to="`/article/${article.path}`">
 				{{ article.title }}
 			</NuxtLink>
