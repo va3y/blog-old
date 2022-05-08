@@ -1,0 +1,15 @@
+name = "playground"
+type = "javascript"
+account_id = "0e8e15384e6144a50e9b15a347279832"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-04-07"
+
+[site]
+bucket = ".output/public"
+entry-point = ".output"
+
+[build]
+command = ""
+upload.format = "service-worker"
