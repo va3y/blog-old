@@ -1,12 +1,17 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
-  },
-  "devDependencies": {
-    "nuxt": "3.0.0-rc.1"
-  }
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview"
+	},
+	"devDependencies": {
+		"@nuxt/content-edge": "^2.0.0-27530884.c34f7bd",
+		"@nuxt/types": "^2.15.8",
+		"@nuxtjs/tailwindcss": "^5.0.4",
+		"@tailwindcss/typography": "^0.5.2",
+		"nuxt": "3.0.0-rc.1"
+	},
+	"dependencies": {}
 }
