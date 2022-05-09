@@ -11,7 +11,7 @@ const { data: article } = await useAsyncData(route.path, () => {
 	<div class="max-w-2xl mx-auto">
 		<div class="justify-between items-start">
 			<Link class="text-2xl h-4" to="/"
-				><ArrowLeftIcon class="h-4 mr-2 aspect-square" /> Go back</Link
+				><ArrowLeftIcon class="h-4 mr-2 aspect-square" />Go back</Link
 			>
 			<h1 class="text-6xl font-semibold mt-4">{{ article.title }}</h1>
 			<div class="mt-4 text-2xl">{{ article.createdAt }}</div>

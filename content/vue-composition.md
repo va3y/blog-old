@@ -301,7 +301,7 @@ Pros: Most concise and intuitive syntax so far
 
 Cons: as of December 2021 this is still an experimental feature and it's syntax is likely to change. 
 
-The <Suspense> component has much more possibilities than just async in child component setup. Using it, we can also specify loading and fallback states. I think this is the way forward for creating async components. Nuxt 3 already uses this feature, and for me it will probably be the preferred way, once this feature will be stable
+The `<Suspense>` component has much more possibilities than just async in child component setup. Using it, we can also specify loading and fallback states. I think this is the way forward for creating async components. Nuxt 3 already uses this feature, and for me it will probably be the preferred way, once this feature will be stable
 
 ### Solution 4: Separate 3-rd party methods, tailored for these cases (see next section)
 
@@ -482,9 +482,9 @@ export default function ({
 
 </aside>
 
-### [Volar extension](https://github.com/johnsoncodehk/volar)
+### Volar extension
 
-Volar came as a replacement of Vetur as a Vue extension for VsCode and WebStorm. Now it's officially recommended for usage in Vue 3. For me, it's main feature is: **typing props and emits out of the box**. Which works great, especially if you use Typescript.
+[Volar](https://github.com/johnsoncodehk/volar) came as a replacement of Vetur as a Vue extension for VsCode and WebStorm. Now it's officially recommended for usage in Vue 3. For me, it's main feature is: **typing props and emits out of the box**. Which works great, especially if you use Typescript.
 
 Right now, I would always go for Volar in Vue 3 projects. For Vue 2, Volar still works better for me, as less tweaking is needed for it to work. 
 

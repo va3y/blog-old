@@ -31,11 +31,11 @@ div {
 }
 
 :deep(pre) {
-	@apply flex-1 py-4 w-full;
+	@apply flex-1 w-full bg-stone-800 dark:bg-stone-900 m-0 py-6;
 }
 
 :deep(code) {
-	@apply flex flex-col w-full;
+	@apply flex flex-col w-full py-4;
 }
 
 :deep(.line) {
