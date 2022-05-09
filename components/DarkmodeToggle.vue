@@ -8,6 +8,7 @@ import { MoonIcon, LightBulbIcon } from "@heroicons/vue/solid";
 		@click="
 			$colorMode.preference = $colorMode.value === 'dark' ? 'light' : 'dark'
 		"
+		title="Light/dark mode toggle"
 	>
 		<MoonIcon v-show="$colorMode.value === 'dark'" />
 		<LightBulbIcon v-show="$colorMode.value === 'light'" />

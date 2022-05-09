@@ -1,14 +1,20 @@
 import { defineNuxtConfig } from "nuxt";
-import { resolve } from "node:path";
+import tailwindTypography from "@tailwindcss/typography";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	target: "static",
-	modules: ["@nuxt/content-edge", "@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
+	// target: "static",
+	modules: [
+		"@nuxt/content-edge",
+		[
+			"@nuxtjs/color-mode",
+			{
+				classSuffix: "",
+			},
+		],
+		"nuxt-windicss",
+	],
 	compilerOptions: {
-		types: ["@nuxt/types", "@nuxt/content-edge"],
-	},
-	colorMode: {
-		classSuffix: "",
+		types: ["@nuxt/types", "@nuxt/content-edge", "nuxt-windicss"],
 	},
 });
