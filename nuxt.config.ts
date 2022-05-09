@@ -1,11 +1,17 @@
 import { defineNuxtConfig } from "nuxt";
-import tailwindTypography from "@tailwindcss/typography";
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	// target: "static",
+	target: "static",
 	modules: [
-		"@nuxt/content-edge",
+		[
+			"@nuxt/content-edge",
+			{
+				highlight: {
+					theme: "one-dark-pro",
+					preload: ["json", "js", "ts", "html", "css", "vue"],
+				},
+			},
+		],
 		[
 			"@nuxtjs/color-mode",
 			{

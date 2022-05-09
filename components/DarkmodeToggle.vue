@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { MoonIcon, LightBulbIcon } from "@heroicons/vue/solid";
+import { MoonIcon, LightBulbIcon } from "@heroicons/vue/outline";
 </script>
 
 <template>

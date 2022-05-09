@@ -1,5 +1,7 @@
 ---
 title: Nuxt Content + TailwindCSS Typography
+description: By default, Tailwind removes all of the default browser styling from paragraphs, headings
+createdAt: 01.12.2201
 ---
 
 <p className="lead">

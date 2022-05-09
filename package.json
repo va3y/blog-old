@@ -1,5 +1,4 @@
 {
-	"private": true,
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
@@ -9,11 +8,13 @@
 	"devDependencies": {
 		"@heroicons/vue": "^1.0.6",
 		"@nuxt/content-edge": "^2.0.0-27530884.c34f7bd",
-		"@nuxt/types": "^2.15.8",
 		"@nuxtjs/color-mode": "^3.0.2",
 		"@vueuse/nuxt": "^8.4.2",
+		"@windicss/plugin-heropatterns": "^0.0.8",
 		"nuxt": "3.0.0-rc.1",
 		"nuxt-windicss": "^2.3.1"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"@nuxt/types": "^2.15.8"
+	}
 }
