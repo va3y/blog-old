@@ -51,7 +51,7 @@ It's important to cover all of these use cases for a few reasons:
 2. Really just the first reason, that's the whole point of the plugin.
 3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
 
-Now we're going to try out another header style.
+Now we're going to try out another header style
 
 ### Typography should be easy
 
