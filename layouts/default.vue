@@ -1,10 +1,21 @@
+<script setup>
+import { ArrowLeftIcon } from "@heroicons/vue/outline";
+const route = useRoute();
+</script>
+
 <template>
 	<div class="w-full h-full min-h-screen min-w-full">
 		<div
-			class="flex w-full justify-between items-center bg-stone-200 shadow-sm dark:bg-stone-900 py-4 px-8"
+			class="flex w-full justify-between items-center py-4 px-6 sticky bg-stone-400 dark:bg-stone-900 lg:bg-transparent lg:dark:bg-transparent z-10 bg-opacity-50 backdrop-filter backdrop-blur-md md:backdrop-blur-0 top-0"
 		>
-			<NuxtLink to="/" class="font-semibold">Home</NuxtLink>
-			<DarkmodeToggle />
+			<Link
+				v-show="route.path !== '/'"
+				to="/"
+				class="font-semibold block flex items-center"
+			>
+				<ArrowLeftIcon class="h-6 mr-2 aspect-square" />Go back
+			</Link>
+			<DarkmodeToggle class="ml-auto" />
 		</div>
 
 		<div

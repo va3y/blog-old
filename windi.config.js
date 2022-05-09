@@ -1,5 +1,6 @@
 import { defineConfig } from "windicss/helpers";
 import colors from "windicss/colors";
+import theme from "windicss/defaultTheme";
 import typography from "windicss/plugin/typography";
 // import heropatterns from "@windicss/plugin-heropatterns";
 
@@ -8,6 +9,7 @@ export default defineConfig({
 	theme: {
 		fontFamily: {
 			sans: ["ui-sans-serif", "system-ui", "sans-serif"],
+			mono: theme.fontFamily.mono,
 		},
 		extend: {
 			backgroundSize: {

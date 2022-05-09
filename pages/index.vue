@@ -1,43 +1,72 @@
-<script setup>
-const { data: articles } = await useAsyncData("home", () => {
-	return queryContent("/").find();
-});
+<script setup lang="ts">
+import dayjs from "dayjs";
+
+const { data: articles } = await useAsyncData(
+	"home",
+	async () => {
+		return queryContent("/").without(["body"]).sortBy("order", "asc").find();
+	},
+	{ default: () => [] }
+);
+const formatDate = (date: Date) => {
+	return dayjs(date).format("MMM D, YYYY");
+};
 </script>
 
 <template>
-	<div class="">
-		<h1 class="text-rose-600 dark:text-rose-700 pb-2 text-2xl font-semibold">
-			Hi, I'm Valery
-		</h1>
-		<p>I write about Frontend every now and then.</p>
-		<p>
-			You can reach me at
-			<Link in-new-tab href="https://github.com/va3y/">GitHub</Link>,
-			<Link in-new-tab href="https://www.linkedin.com/in/ivanovvaleriy/">
-				LinkedIn</Link
-			>,
-			<Link in-new-tab href="https://twitter.com/primarilyvalery">Twitter</Link>
-			or
-			<Link in-new-tab href="mailto:valerih333@gmail.com">email</Link>.
-		</p>
-		<ul class="mt-16 grid md:grid-cols-2 gap-4 auto-rows-max">
+	<div>
+		<div class="max-w-lg">
+			<h1 class="text-rose-600 dark:text-rose-700 pb-2 text-2xl font-semibold">
+				Hi, I'm Valery
+			</h1>
+			<p>
+				I do React at work, love to develop with
+				<Link href="https://github.com/va3y/blog"> Vue</Link>, know very little
+				Angular, enthusiastic about Svelte, betting on Solid, sometimes
+				perplexed about web components and sill learning new things about HTML.
+				<br />
+				Pro-performance and against js bloat.
+			</p>
+			<br />
+			<p>
+				You can reach me at
+				<Link in-new-tab href="https://github.com/va3y/">GitHub</Link>,
+				<Link in-new-tab href="https://www.linkedin.com/in/ivanovvaleriy/">
+					LinkedIn</Link
+				>,
+				<Link in-new-tab href="https://twitter.com/primarilyvalery"
+					>Twitter</Link
+				>
+				or
+				<Link in-new-tab href="mailto:valerih333@gmail.com">email</Link>. I also
+				write about Frontend every now and then. Here are some of my articles:
+			</p>
+		</div>
+		<ul class="mt-16 gap-4 md:columns-2">
 			<li
-				class="block transition-all duration-500 bg-size-200 bg-left-top hover:bg-center rounded p-1 bg-gradient-to-br dark:from-rose-500 from-rose-300 dark:to-cyan-700 to-cyan-300 hover:from-abmer-300 shadow min-h-40"
+				class="block transition-all duration-500 bg-size-200 bg-left-top hover:bg-center rounded p-1 bg-gradient-to-br dark:from-rose-500 from-rose-300 dark:to-cyan-700 to-cyan-300 hover:from-abmer-300 shadow break-inside-avoid mb-4"
 				v-for="article in articles"
 			>
 				<NuxtLink
-					class="p-4 w-full h-full block bg-stone-200 dark:bg-stone-800 bg-stone-100 bg-opacity-100 dark:bg-opacity-90"
+					class="py-4 px-6 w-full h-full block bg-stone-200 flex flex-col dark:bg-stone-800 bg-stone-100 bg-opacity-100 dark:bg-opacity-90"
 					:to="`/article/${article.path}`"
 				>
-					<div class="flex justify-between gap-4">
-						<div class="text-xl font-semibold">
-							{{ article.title }}
-						</div>
-						<div class="text-sm">
-							{{ article.createdAt }}
-						</div>
+					<div class="text-2xl font-semibold max-w-sm">
+						{{ article.title }}
 					</div>
-					<div class="text-sm mt-4">{{ article.description }}</div>
+					<br />
+					<div class="" v-if="article.description">
+						{{ article.description }}
+					</div>
+
+					<div class="mt-4 opacity-50">
+						<template v-if="!article.updatedAt">
+							{{ formatDate(article.createdAt) }}
+						</template>
+						<template v-if="article.updatedAt">
+							Last&nbsp;updated: {{ formatDate(article.updatedAt) }}
+						</template>
+					</div>
 				</NuxtLink>
 			</li>
 		</ul>

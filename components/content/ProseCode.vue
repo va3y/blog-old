@@ -31,7 +31,7 @@ div {
 }
 
 :deep(pre) {
-	@apply flex-1 w-full bg-stone-800 dark:bg-stone-900 m-0 py-6;
+	@apply flex-1 w-full bg-stone-800 dark:bg-stone-900 m-0 py-6 font-mono;
 }
 
 :deep(code) {

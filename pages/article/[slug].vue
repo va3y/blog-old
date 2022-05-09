@@ -1,6 +1,5 @@
 <script setup>
 import Link from "~~/components/Link.vue";
-import { ArrowLeftIcon } from "@heroicons/vue/outline";
 const route = useRoute();
 const { data: article } = await useAsyncData(route.path, () => {
 	return queryContent(route.params.slug).findOne();
@@ -8,18 +7,21 @@ const { data: article } = await useAsyncData(route.path, () => {
 </script>
 
 <template>
-	<div class="max-w-2xl mx-auto">
-		<div class="justify-between items-start">
-			<Link class="text-2xl h-4" to="/"
-				><ArrowLeftIcon class="h-4 mr-2 aspect-square" />Go back</Link
-			>
+	<div class="mx-auto max-w-prose text-sm xl:text-base">
+		<div class="justify-between items-start mb-14">
 			<h1 class="text-6xl font-semibold mt-4">{{ article.title }}</h1>
 			<div class="mt-4 text-2xl">{{ article.createdAt }}</div>
 		</div>
 		<Content
 			v-if="article"
 			:document="article"
-			class="prose prose-sm lg:prose-md mt-8 max-w-2xl"
+			class="prose prose-sm lg:prose-md xl:prose-lg mt-8 mx-auto"
 		/>
 	</div>
 </template>
+
+<style>
+.prose table {
+	@apply border-collapse;
+}
+</style>
