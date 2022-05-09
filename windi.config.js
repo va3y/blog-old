@@ -1,7 +1,6 @@
 import { defineConfig } from "windicss/helpers";
 import colors from "windicss/colors";
 import typography from "windicss/plugin/typography";
-import aspectRatio from "windicss/plugin/aspect-ratio";
 // import heropatterns from "@windicss/plugin-heropatterns";
 
 export default defineConfig({
@@ -33,7 +32,6 @@ export default defineConfig({
 	},
 	plugins: [
 		typography({ dark: true }),
-		aspectRatio(),
 		// heropatterns({
 		// 	// the list of patterns you want to generate a class for
 		// 	// the names must be in kebab-case
