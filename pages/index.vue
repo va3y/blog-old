@@ -30,8 +30,7 @@ const formatDate = (date: Date) => {
 				<Link href="https://github.com/va3y/blog"> Vue</Link>, know very little
 				Angular, enthusiastic about Svelte, betting on Solid, sometimes
 				perplexed about web components and sill learning new things about HTML.
-				<br />
-				Pro-performance and against js bloat.
+				Pro&#8209;performance and anti js bloat.
 			</p>
 			<br />
 			<p>

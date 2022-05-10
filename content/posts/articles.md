@@ -1,8 +1,8 @@
 ---
 title: Books, articles and talks, I wish I knew about sooner
 description: 'Clickbait title: 10 TALKS EVERY DEV SHOULD NOW'
-createdAt: 01.12.2201
-updatedAt: 01.12.2201
+createdAt: 2022-05-02
+updatedAt: 2022-05-11
 order: 1
 ---
 
