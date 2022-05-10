@@ -4,7 +4,10 @@ import dayjs from "dayjs";
 const { data: articles } = await useAsyncData(
 	"home",
 	async () => {
-		return queryContent("/").without(["body"]).sortBy("order", "asc").find();
+		return queryContent("/posts")
+			.without(["body"])
+			.sortBy("order", "asc")
+			.find();
 	},
 	{ default: () => [] }
 );
@@ -15,6 +18,9 @@ const formatDate = (date: Date) => {
 
 <template>
 	<div>
+		<Head>
+			<title>Home | Va3y Blog</title>
+		</Head>
 		<div class="max-w-lg">
 			<h1 class="text-rose-600 dark:text-rose-700 pb-2 text-2xl font-semibold">
 				Hi, I'm Valery
@@ -49,15 +55,15 @@ const formatDate = (date: Date) => {
 			>
 				<NuxtLink
 					class="py-4 px-6 w-full h-full block flex flex-col dark:bg-stone-800 bg-stone-200 bg-opacity-90"
-					:to="`/article/${article.path}`"
+					:to="`/${article.path}`"
 				>
 					<div class="text-2xl font-semibold max-w-sm">
 						{{ article.title }}
 					</div>
 					<br />
 					<div class="" v-if="article.description">
-						{{ article.description }} ({{ Math.round(article.size / 800) }} min.
-						read)
+						{{ article.description }} ({{ Math.round(article.size / 800) }}
+						min. read)
 					</div>
 
 					<div class="mt-4 opacity-50">

@@ -1,9 +1,16 @@
 ---
 title: 'Building an app around Vue 3 Composition API'
-description: 'meta description of the page'
+description: Wrapping my head around the fresh Vue API
 createdAt: 01.02.2001
 order: 10
 ---
+
+<p className="lead">
+This article is also available on <a href="https://medium.com/@valerih333/building-an-app-around-vue-3-composition-api-f3595a7e39f2" class="!underline">Medium</a>.
+</p>
+
+
+
 
 ## 1. The state of Vue 3 and Composition API
 
@@ -488,8 +495,6 @@ export default function ({
 [Volar](https://github.com/johnsoncodehk/volar) came as a replacement of Vetur as a Vue extension for VsCode and WebStorm. Now it's officially recommended for usage in Vue 3. For me, it's main feature is: **typing props and emits out of the box**. Which works great, especially if you use Typescript.
 
 Right now, I would always go for Volar in Vue 3 projects. For Vue 2, Volar still works better for me, as less tweaking is needed for it to work. 
-
-![Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6893ca8d-2504-4a55-9473-3b33d912932d/Untitled.png)
 
 A useful link: [how to register global components in Volar](https://github.com/johnsoncodehk/volar/tree/master/extensions/vscode-vue-language-features#:~:text=Define%20Global%20Components). 
 

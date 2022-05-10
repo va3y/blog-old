@@ -1,6 +1,6 @@
 ---
 title: Books, articles and talks, I wish I knew about sooner
-description: I collection of articles and talks that made impact on the way I think 
+description: 'Clickbait title: 10 TALKS EVERY DEV SHOULD NOW'
 createdAt: 01.12.2201
 updatedAt: 01.12.2201
 order: 1
@@ -15,14 +15,38 @@ The list is in no particular order and subject to update in the future!
 
 [![](https://overreacted.io/static/2b269b9cc5c8adb3b9c1172dfbc10abb/fcda8/wet_codebase.png)](https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase)
 
-## 2. Ryan Carniato, breaking down the web
+A link to the talk: \
+https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase
+
+This Dan's talk is a big one for me. At this time, I was working on a project that was quite badly maintained, 
+written by mostly beginner developers. The codebase was certainly far from flawless, but I often cought myself thinking:
+
+> Why do I sometimes find beginners code so much easier to work with, even if 
+> it's sometimes copy-pasty/naive/unstructured?
+
+Well, this talk gives the answer for that. 
+
+I think after a certain point, we all developers strive to write "clean" code,
+use Bob's solid patterns, etc. But this often compromises the readability (which is №1 priority imo) and can shoot ourselves in the foot.
+The key takeaway from this talk for me was this basic idea:
+
+> Bad abstractions are worse than copy-pasting
+
+They are. They are harder to maintain, and come at the worst cost, than code duplicaiton. The latter is obviously also bad and 
+a form of technical dept, but often less dangerous.
+
+## 2. Rich Harris, Transitional apps
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/860d8usGC0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A classic Rich Harris talk that made me think about traditional web page vs. SPA thing. Looking at the bigger picture of 
+web, it's past and where it's all going is really valuable. And of course Rich is one of the most 
+respected people in frontend for me.
+
+## 3. Ryan Carniato, breaking down the web
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/REXtIuAJ3dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-## 3. Rich Harris, Transitional apps
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/860d8usGC0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 4. Image optimization, Addy Osmani
 
@@ -33,7 +57,6 @@ The list is in no particular order and subject to update in the future!
 ## 5. Brian Will, Object-Oriented Programming is Bad
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QM1iUe6IofM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 Well, this is a title ;)
 
