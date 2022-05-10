@@ -2,6 +2,7 @@
 title: 'Building an app around Vue 3 Composition API'
 description: 'meta description of the page'
 createdAt: 01.02.2001
+order: 10
 ---
 
 ## 1. The state of Vue 3 and Composition API

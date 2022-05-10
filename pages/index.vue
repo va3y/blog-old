@@ -48,7 +48,7 @@ const formatDate = (date: Date) => {
 				v-for="article in articles"
 			>
 				<NuxtLink
-					class="py-4 px-6 w-full h-full block bg-stone-200 flex flex-col dark:bg-stone-800 bg-stone-100 bg-opacity-100 dark:bg-opacity-90"
+					class="py-4 px-6 w-full h-full block flex flex-col dark:bg-stone-800 bg-stone-200 bg-opacity-90"
 					:to="`/article/${article.path}`"
 				>
 					<div class="text-2xl font-semibold max-w-sm">
@@ -56,7 +56,8 @@ const formatDate = (date: Date) => {
 					</div>
 					<br />
 					<div class="" v-if="article.description">
-						{{ article.description }}
+						{{ article.description }} ({{ Math.round(article.size / 800) }} min.
+						read)
 					</div>
 
 					<div class="mt-4 opacity-50">
