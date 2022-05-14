@@ -23,7 +23,7 @@ const formatDate = (date: Date) => {
 		<Content
 			v-if="article"
 			:document="article"
-			class="prose prose-sm lg:prose-md xl:prose-lg mx-auto"
+			class="prose prose-sm lg:prose-md xl:prose-lg mx-auto w-full overflow-hidden"
 		/>
 	</div>
 </template>

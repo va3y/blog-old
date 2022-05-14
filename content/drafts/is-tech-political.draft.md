@@ -5,4 +5,4 @@ createdAt: 01.02.2001
 order: 10
 ---
 
-## 1. The state of Vue 3 and Composition API
+## Is all tech political?
