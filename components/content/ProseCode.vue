@@ -20,25 +20,23 @@ defineProps({
 </script>
 
 <template>
-	<div>
+	<div
+		class="prose-code flex w-full overflow-auto rounded-lg overflow-auto my-4 bg-stone-800 dark:bg-stone-900 prose-code"
+	>
 		<slot />
 	</div>
 </template>
 
-<style scoped>
-div {
-	@apply flex w-full overflow-auto rounded-lg overflow-auto my-4 bg-stone-800 dark:bg-stone-900;
-}
-
-:deep(pre) {
+<style>
+.prose-code pre {
 	@apply flex-1 w-full bg-stone-800 dark:bg-stone-900 m-0 py-6 font-mono;
 }
 
-:deep(code) {
+.prose-code code {
 	@apply flex flex-col w-full py-4;
 }
 
-:deep(.line) {
+.prose-code .line {
 	@apply break-all px-4 w-full block;
 }
 </style>
