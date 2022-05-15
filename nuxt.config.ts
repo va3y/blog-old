@@ -20,6 +20,15 @@ export default defineNuxtConfig({
 		],
 		"nuxt-windicss",
 	],
+	head: {
+		link: [
+			{
+				rel: "icon",
+				type: "image/x-icon",
+				href: "/favicon.ico",
+			},
+		],
+	},
 	compilerOptions: {
 		types: ["@nuxt/types", "@nuxt/content-edge", "nuxt-windicss"],
 	},
