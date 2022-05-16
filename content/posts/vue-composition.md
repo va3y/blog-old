@@ -122,6 +122,7 @@ Note that `featureA.js` and `featureB.js` export `Ref` and `ComputedRef` types, 
 This specific snippet can seem as a bit overkill, however: 
 
 - Imagine the component having 500+ lines of code, instead of 10. With separating logic into `use__.js` files, the code gets more readable.
+  
 - We can freely reuse the composable functions inside the `.js` files in multiple components! No more limitations of renderless components with scoped slots or namespace clashing of mixins. Because the composables use `ref` and `computed` straight from Vue, this code will just work with any `.vue` component in your project.
 
 ### Gotcha 1: Lifecycle hooks in setup.

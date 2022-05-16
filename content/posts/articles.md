@@ -1,5 +1,5 @@
 ---
-title: Books, articles and talks, I wish I knew about sooner
+title: Books, articles, and talks that I wish I knew about sooner
 description: 'Clickbait title: 10 talks EVERY dev should know!'
 createdAt: 2022-05-02
 updatedAt: 2022-05-11
@@ -37,15 +37,15 @@ The latter is also bad and a form of technical debt, but often less dangerous.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/860d8usGC0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-One of the must-see type of Rich Harris talks that looks at the traditional web page vs. SPA debate. 
+A must-see Rich Harris talk that looks at the traditional web page vs. SPA debate. 
 Looking at the bigger picture of the web, its past, and where it's all going is really valuable. 
-And of course, Rich is one of the most respected people in frontend for me.
+And of course, Rich is one of the most respected people in front-end for me.
 
 ## 3. Ryan Carniato, breaking down the web
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/REXtIuAJ3dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-I think Ryan's streams is the most underrated thing at this moment. You can get a lot of useful knowledge from this recording and his other streams. I value Ryan's big-picture view of the web, how it works and looking at possible solutions to improve it. 
+I think Ryan's streams is the most underrated thing at this moment. You can get a lot of useful knowledge from this recording and his other streams. I value Ryan's big-picture view of the web, how it works, and looking at possible solutions to improve it. 
 
 
 ## 4. Image optimization, Addy Osmani
@@ -64,7 +64,7 @@ Well... that's a title 😬
 
 
 It sounds like yet another hot take on the internet (which it is), but I think he makes a good case for that. 
-I believe this mindset of not using the OOP paradigm works well for the frontend. Nowadays, I think twice before introducing a word 'class' in the codebase.
+I believe this mindset of not using the OOP paradigm works well for the front-end. Nowadays, I think twice before introducing the word 'class' in the codebase.
 
 
 I wouldn't go as far as trashing this paradigm completely, but I think most of the arguments he gives are 100% valid for front-end.
@@ -73,13 +73,13 @@ I wouldn't go as far as trashing this paradigm completely, but I think most of t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FyCYva9DhsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-That's another hot take-y presentation, about the enterprise code and it's consequences. My single-sentence summary is:
+That's another hot take-y presentation, about the enterprise code and its consequences. My single-sentence summary is:
 don't try to seem smart when writing code. Many bad things can start from the idea of: "huh, lemme do a currying pipe function here, probably gonna look cool".
 
 ## 7. The coding career handbook, Shawn Wang
 
 [https://learninpublic.org](https://learninpublic.org)
 
-This one is not a technical pick. This is a book by Shawn Wang, aka: @swyx about building a career in tech. It's quite short, but dense,
-there are many cool factoids, tips and ideas about building a career in tech. I seriously vibe with the learning in public idea, and that's 
-actually one of reasons why I started this blog 🥰
+This one is not a technical pick. This is a book by Shawn Wang, aka @swyx about building a career in tech. It's quite short but dense with ideas.
+There are many cool factoids, tips, and ideas about building a career in tech. I seriously vibe with the learning in public idea, and that's 
+actually one of the reasons why I started this blog 🥰

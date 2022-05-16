@@ -24,7 +24,7 @@ export default defineConfig({
 					css: {
 						color: colors.stone[800],
 						a: {
-							color: colors.red[500],
+							color: [colors.red[500]],
 							textDecoration: "none",
 						},
 					},
@@ -32,25 +32,5 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [
-		typography({ dark: true }),
-		// heropatterns({
-		// 	// the list of patterns you want to generate a class for
-		// 	// the names must be in kebab-case
-		// 	// an empty array will generate all 87 patterns
-		// 	patterns: ["topography", "architect"],
-
-		// 	// The foreground colors of the pattern
-		// 	colors: {
-		// 		default: colors.stone[500],
-		// 	},
-
-		// 	// The foreground opacity
-		// 	opacity: {
-		// 		default: "0.4",
-		// 		100: "1.0",
-		// 		20: "0.05",
-		// 	},
-		// }),
-	],
+	plugins: [typography({ dark: true })],
 });

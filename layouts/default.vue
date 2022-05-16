@@ -15,11 +15,12 @@ const route = useRoute();
 			>
 				<ArrowLeftIcon class="h-6 mr-2 aspect-square" />Go back
 			</Link>
+
 			<DarkmodeToggle class="ml-auto" />
 		</div>
 
 		<div
-			class="px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl space-y-10 sm:space-y-12 lg:space-y-20 xl:space-y-24 relative"
+			class="px-4 max-w-3xl mx-auto sm:px-6 lg:max-w-4xl lg:px-8 xl:max-w-6xl space-y-10 relative"
 		>
 			<NuxtPage />
 		</div>
