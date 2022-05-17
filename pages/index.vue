@@ -20,6 +20,9 @@ const formatDate = (date: Date) => {
 	<div class="lg:text-lg">
 		<Head>
 			<title>Home | Va3y Blog</title>
+			<template v-for="prefetchLink in articles">
+				<link rel="prefetch" :href="`${prefetchLink.slug}`" />
+			</template>
 		</Head>
 		<div class="max-w-xl mt-4">
 			<h1 class="text-rose-600 dark:text-rose-700 pb-6 text-6xl font-bold">
